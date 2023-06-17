@@ -1,9 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-
+#include <stdio.h>
 /**
- * main - Prints the alphabet without q and e.
+ * main - Prints numbers from 0 to 9.
  *
  * Return: Always 0 (Success)
  */
@@ -11,12 +8,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
+	for (i = 48; i < 58; i++)
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
