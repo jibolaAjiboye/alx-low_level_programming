@@ -3,8 +3,8 @@
 #include<stdio.h>
 
 /**
- * main - Prints the last digit of a random generated number
- * and whether it's greater than 5, less than 6, or 0.
+ * main - Display the final digit of a random generated number.
+ * Determine if the last digit of a randomly generated number is greater than 5, less than 6, or equal to 0
  *
  * Return: Always 0.
  */
