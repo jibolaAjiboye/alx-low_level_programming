@@ -1,11 +1,13 @@
 #include "main.h"
 /*
- * writing a program that prints _putchar
- * followed by a new line.
- * return 0
+ * Writing a program that prints _putchar
+ * followed by a new line
+ * Description:
+ * This fuction uses a _putchar to print each character of "_putchar".
+ * Return 0
  */
 
-int main(void)
+int print _putchar(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -15,5 +17,5 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-return (0);
+	return (0);
 }
