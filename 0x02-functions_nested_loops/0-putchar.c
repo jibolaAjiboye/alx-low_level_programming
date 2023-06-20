@@ -1,10 +1,9 @@
 #include "main.h"
-/*
- * Writing a program that prints _putchar
+
+/**
+ * main - print _putchar
  * followed by a new line
- * Description:
- * This fuction uses a _putchar to print each character of "_putchar".
- * Return 0
+ * Return: always 0 (success)
  */
 
 int main(void)
