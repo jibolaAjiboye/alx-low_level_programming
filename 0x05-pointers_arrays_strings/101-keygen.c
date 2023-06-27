@@ -1,47 +1,23 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - generates keygen.
- * Return: 0 Alway (success).
+ * main - entry point generates a random password
+ *
+ * Return: the generated password
  */
 int main(void)
 {
-	char password[84];
-	int index = 0, sum = 0, diff_half1, diff_half2;
+char c;
+int x;
 
-	srand(time(0));
-	while (sum < 2772)
-
-	{
-		password[index] = 33 + rand() % 94;
-		sum += password[index++];
-	}
-	password[index] = '0';
-
-	if (sum != 2772)
-	{
-	password[index] = 33 + rand() % 94;
-	sum += password[index++];
-
-	if ((sum - 2772) % 2 != 0)
-		diff_half1++;
-	for (index = 0; password[index]; index++)
-	{
-		if (password[index] >= (33 + diff_half1))
-		{
-			password[index] -= diff_half1;
-			break;
-		}
-	}
-	for (index = 0; password[index]; index++)
-	{
-		if (password[index] >= (33 + diff_half2))
-
-			password[index] -= diff_half2;
-		break;
-	}
-	}
-	printf("%s", password);
-	return (0);
+srand(time(0));
+while (x <= 2645)
+{
+c = rand() % 128;
+x += c;
+putchar(c);
+}
+putchar(2772 - x);
+return (0);
 }
